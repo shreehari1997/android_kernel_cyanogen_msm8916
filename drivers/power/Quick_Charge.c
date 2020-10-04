@@ -66,21 +66,21 @@ void batt_level (int Battery_Status)
 	if (Charging_Profile == 0)
 	{
 	   // Mechanism of Driver to Allocate Current (mA).
- 	   if (Battery_Percent >= 0 && Battery_Percent <= 60)
+ 	   if (Battery_Percent >= 0 && Battery_Percent <= 59)
 	      Dynamic_Current = 1250;
-	   else if (Battery_Percent >= 61 && Battery_Percent <= 90)
+	   else if (Battery_Percent >= 60 && Battery_Percent <= 89)
 		   Dynamic_Current = 1125;
-	   else if (Battery_Percent >= 91 && Battery_Percent <= 100)
+	   else if (Battery_Percent >= 90 && Battery_Percent <= 100)
   	           Dynamic_Current = 1000;
 	}
 	else
 	{
 	    // Mechanism of Driver to Allocate Current (mA).
-	    if (Battery_Percent >= 0 && Battery_Percent <= 60)
+	    if (Battery_Percent >= 0 && Battery_Percent <= 59)
 	       Dynamic_Current = 1500;
-	    else if (Battery_Percent >= 61 && Battery_Percent <= 90)
+	    else if (Battery_Percent >= 60 && Battery_Percent <= 89)
 		    Dynamic_Current = 1250;
-	    else if (Battery_Percent >= 91 && Battery_Percent <= 100)
+	    else if (Battery_Percent >= 90 && Battery_Percent <= 100)
   	            Dynamic_Current = 1000;
 	}
 }
