@@ -42,7 +42,7 @@ static int Toggle_Mirror = 0;
 // Variable to Check when Charging-Profile is Changed.
 static int CP_Mirror = 1;
 // Variable to Store a Copy of Max. Current (mA) as Defined in DT.
-static int DT_Current;
+static int DT_Current =1000;
 #endif
 
 struct fan5405_chip {
