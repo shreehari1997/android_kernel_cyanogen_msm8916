@@ -1778,7 +1778,7 @@ static int bq24157_probe(struct i2c_client *client, const struct i2c_device_id *
 
 	#ifdef CONFIG_QUICK_CHARGE
 	// IC is "BQ24157". Report this to Quick Charge Driver.
-	ic_vendor (1);
+	ic_vendor (0);
 	#endif
 
 	/* 1. set charge safety register */
